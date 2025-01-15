@@ -1,0 +1,127 @@
+/* Container principal */
+.company-list-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Cabeçalho */
+  .company-list-header {
+    background-color: #247BA0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 10px;
+  }
+  
+  .company-list-title {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Botão "Criar Nova Empresa" */
+  .company-create-button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .company-create-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .company-box-div {
+    padding: 60px;
+  }
+
+  .company-table-div {
+    background-color: #E8F1F2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto
+  }
+
+  /* Tabela */
+  .company-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .company-table th,
+  .company-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .company-table th {
+    background-color: #006494;
+    font-weight: bold;
+  }
+  
+  .company-table tr:nth-child(even) {
+    background-color: #006494;
+  }
+  
+  .company-table tr:nth-child(odd) {
+    background-color: #13293D;
+  }
+
+  .company-table tr:hover {
+    background-color: #006404;
+  }
+  
+  /* Botão "Editar" */
+  .company-edit-button {
+    background-color: #1B98E0;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .company-delete-button {
+    background-color: #F44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .company-edit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .company-delete-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  @media (max-width: 768px) {
+    .company-list-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .company-table-container {
+        padding: 15px;
+    }
+
+    .company-table th,
+    .company-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .company-create-button {
+        font-size: 14px;
+    }
+}

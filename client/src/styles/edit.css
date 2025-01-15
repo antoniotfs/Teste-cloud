@@ -1,0 +1,71 @@
+/* Centraliza o container */
+.edit-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Usa min-height em vez de height para maior flexibilidade */
+    background-color: #13293D;
+    padding: 20px; /* Adiciona padding para garantir espaçamento em telas pequenas */
+  }
+  
+  /* Caixa ao redor do formulário */
+  .edit-page-form-wrapper {
+    width: 100%;
+    max-width: 500px;
+    background: #E8F1F2;
+    padding: 20px;
+    border-radius: 11px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Título */
+  .edit-page-form-wrapper h2 {
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  /* Inputs e botões */
+  .edit-page-form-wrapper input,
+  .edit-page-form-wrapper button {
+    width: 100%; /* Faz os elementos ocuparem toda a largura disponível */
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .edit-page-form-wrapper button {
+    background-color: #247BA0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-page-form-wrapper button:hover {
+    background-color: #1B5A7A;
+  }
+  
+  /* Estilos gerais de responsividade */
+  @media (max-width: 768px) {
+    .edit-page-form-wrapper {
+      padding: 15px;
+      margin: 0 15px; /* Adiciona margem lateral em telas pequenas */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .edit-page-form-wrapper h2 {
+      font-size: 1.25rem;
+    }
+  
+    .edit-page-form-wrapper input,
+    .edit-page-form-wrapper button {
+      font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
+      padding: 8px;
+    }
+  }
+  
